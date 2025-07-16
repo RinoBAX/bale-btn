@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Registrasi Aplikasi Bale-BTN</title>
+    <link rel="icon" type="image/png" href="/baxIcon.png" />
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply Inter font to the body */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for better visual appeal */
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .btn-download {
+            transition: all 0.3s ease;
+        }
+        /* 3D hover effect for the BAX logo */
+        .logo-hover {
+            transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+        .logo-hover:hover {
+            transform: translateY(-6px) scale(1.05); /* Mengangkat logo sedikit ke atas dan memperbesar */
+            filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.25)); /* Menambahkan bayangan yang lebih jelas untuk efek 3D */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto px-10 py-10 md:px-8 md:py-12">
+        
+        <!-- Header Section: Logo and Download Button -->
+        <header class="flex justify-between items-center mb-8 md:mb-12">
+            <!-- BAX Logo -->
+            <a href="https://baxlancer.com/" target="_blank" class="flex items-center space-x-2 text-2xl font-bold text-gray-900">
+                <!-- Add the 'logo-hover' class to the img tag -->
+                <img src="./assets/iconBaxRemovedBG.png" alt="BAX Logo" class="w-24 logo-hover" onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=Logo';">
+            </a>
+            
+            <!-- Download PDF Button -->
+            <a href="#" id="download-btn" class="btn-download bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md flex items-center space-x-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                <span>Download PDF</span>
+            </a>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg">
+                <h1 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-4">Panduan Lengkap Registrasi Aplikasi Bale-BTN</h1>
+                <p class="text-center text-gray-600 mb-10 md:mb-12 max-w-3xl mx-auto">
+                    Selamat datang di panduan registrasi Bale-BTN. Ikuti langkah-langkah di bawah ini untuk mengaktifkan akun Anda dan menikmati kemudahan layanan perbankan dari Bank BTN.
+                </p>
+
+                <!-- Steps Container -->
+                <div class="space-y-12">
+                    
+                    <!-- Step 1: Download Aplikasi -->
+                    <div class="card p-6 md:p-8 flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/2">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-3">Langkah 1: Unduh Aplikasi Bale-BTN</h2>
+                            <p class="text-gray-600 leading-relaxed">
+                                Pertama, unduh aplikasi resmi "Bale-BTN" dari toko aplikasi di ponsel Anda. Aplikasi ini tersedia gratis di Google Play Store untuk pengguna Android dan di Apple App Store untuk pengguna iOS.
+                            </p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Tampilan+App+Store" alt="Gambar Unduh Aplikasi" class="rounded-lg shadow-md w-full h-auto">
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Mulai Registrasi -->
+                    <div class="card p-6 md:p-8 flex flex-col md:flex-row-reverse items-center gap-8">
+                        <div class="md:w-1/2">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-3">Langkah 2: Buka Aplikasi & Mulai Daftar</h2>
+                            <p class="text-gray-600 leading-relaxed">
+                                Setelah aplikasi terpasang, buka aplikasi Bale-BTN. Pada halaman utama, Anda akan melihat beberapa pilihan. Pilih tombol <strong class="text-blue-600">"Daftar"</strong> atau <strong class="text-blue-600">"Registrasi"</strong> untuk memulai proses pendaftaran akun baru.
+                            </p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Halaman+Awal+Aplikasi" alt="Gambar Halaman Awal Aplikasi" class="rounded-lg shadow-md w-full h-auto">
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Isi Data Diri -->
+                    <div class="card p-6 md:p-8 flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/2">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-3">Langkah 3: Isi Formulir Data Diri</h2>
+                            <p class="text-gray-600 leading-relaxed">
+                                Anda akan diminta untuk mengisi formulir pendaftaran dengan data diri yang valid. Siapkan e-KTP Anda. Masukkan informasi seperti Nama Lengkap (sesuai e-KTP), Nomor e-KTP, Tanggal Lahir, Nomor Telepon aktif, dan Alamat Email.
+                            </p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Formulir+Data+Diri" alt="Gambar Formulir Data Diri" class="rounded-lg shadow-md w-full h-auto">
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Verifikasi e-KTP dan Wajah -->
+                    <div class="card p-6 md:p-8 flex flex-col md:flex-row-reverse items-center gap-8">
+                        <div class="md:w-1/2">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-3">Langkah 4: Verifikasi e-KTP & Wajah</h2>
+                            <p class="text-gray-600 leading-relaxed">
+                                Untuk keamanan, sistem akan meminta verifikasi identitas. Anda perlu mengambil foto e-KTP Anda dengan jelas. Setelah itu, ikuti instruksi untuk melakukan verifikasi wajah (liveness check), biasanya berupa selfie sambil mengikuti gerakan yang diminta (seperti berkedip atau menoleh).
+                            </p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Verifikasi+e-KTP+%26+Wajah" alt="Gambar Verifikasi" class="rounded-lg shadow-md w-full h-auto">
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Buat User ID & Password -->
+                    <div class="card p-6 md:p-8 flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/2">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-3">Langkah 5: Buat Kredensial Login</h2>
+                            <p class="text-gray-600 leading-relaxed">
+                                Buat <strong class="text-blue-600">User ID</strong> yang unik dan <strong class="text-blue-600">Password</strong> yang kuat untuk login ke aplikasi. Pastikan password Anda memenuhi kriteria keamanan yang ditentukan (kombinasi huruf besar, huruf kecil, angka, dan simbol).
+                            </p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Buat+User+ID+%26+Password" alt="Gambar Membuat Kredensial" class="rounded-lg shadow-md w-full h-auto">
+                        </div>
+                    </div>
+
+                    <!-- Step 6: Buat MPIN -->
+                    <div class="card p-6 md:p-8 flex flex-col md:flex-row-reverse items-center gap-8">
+                        <div class="md:w-1/2">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-3">Langkah 6: Buat MPIN Transaksi</h2>
+                            <p class="text-gray-600 leading-relaxed">
+                                Selanjutnya, buat 6 digit <strong class="text-blue-600">MPIN (Mobile PIN)</strong>. MPIN ini akan digunakan untuk mengotorisasi setiap transaksi keuangan yang Anda lakukan melalui aplikasi, seperti transfer, pembayaran, dan pembelian. Jaga kerahasiaan MPIN Anda.
+                            </p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Buat+MPIN" alt="Gambar Membuat MPIN" class="rounded-lg shadow-md w-full h-auto">
+                        </div>
+                    </div>
+                    
+                    <!-- Step 7: Registrasi Berhasil -->
+                    <div class="text-center mt-16">
+                        <div class="inline-block bg-green-100 text-green-800 p-4 rounded-full">
+                            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900 mt-4">Registrasi Selesai!</h2>
+                        <p class="text-gray-600 mt-2 max-w-xl mx-auto">
+                            Selamat! Akun Bale-BTN Anda telah berhasil dibuat. Anda sekarang dapat login menggunakan User ID dan Password yang telah Anda daftarkan untuk mulai bertransaksi.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 text-gray-500 text-sm">
+            <p>&copy; 2024 BAX Documentation. Dibuat untuk tujuan demonstrasi.</p>
+        </footer>
+    </div>
+
+    <!-- Custom Modal for Download Notification -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-8 rounded-lg shadow-xl text-center">
+            <h3 class="text-xl font-semibold mb-4">Informasi</h3>
+            <p>Fitur unduh PDF akan segera tersedia.</p>
+            <button id="close-modal" class="mt-6 bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700">Tutup</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle modal functionality for the download button
+        const downloadBtn = document.getElementById('download-btn');
+        const modal = document.getElementById('modal');
+        const closeModalBtn = document.getElementById('close-modal');
+
+        downloadBtn.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default link behavior
+            modal.classList.remove('hidden');
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        // Close modal if user clicks outside of it
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
